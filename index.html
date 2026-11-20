@@ -36,6 +36,15 @@ a{color:#ffffff}a:hover{color:#ff6b7d}
 .sa-card h3{margin:0 0 8px;font-family:Manrope,Inter,sans-serif;font-weight:600;color:#fff}
 .sa-card p{margin:0;color:#a1a1aa;line-height:1.6}
 .sa-ic{align-self:flex-start;display:inline-flex;padding:12px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);margin-bottom:16px}
+.sa-vgrid{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:28px;align-items:start}
+.sa-vcard{border-radius:20px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);overflow:hidden}
+.sa-vcard video{display:block;width:100%;height:auto;background:#000}
+.sa-vmeta{padding:18px 20px 20px;text-align:left}
+.sa-vtag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#ef233c;margin-bottom:6px}
+.sa-vt{font-family:Manrope,Inter,sans-serif;font-size:20px;font-weight:700;color:#fff;margin:0 0 4px}
+.sa-vd{font-size:14px;color:#a1a1aa;margin:0;line-height:1.5}
+.sa-vq{max-width:340px;justify-self:center;width:100%}
+@media (max-width:860px){.sa-vgrid{grid-template-columns:1fr}.sa-vq{max-width:300px}}
 .sa-h2{font-family:Manrope,Inter,sans-serif !important;font-size:48px !important;line-height:1.1 !important;font-weight:600 !important;letter-spacing:-1px;margin:0 0 16px !important;color:#fff}
 .sa-h1{font-family:Manrope,Inter,sans-serif !important;font-size:96px !important;line-height:1.05 !important;font-weight:600 !important;letter-spacing:-3px;margin:0 0 32px !important}
 .sa-grad{background:linear-gradient(to bottom,#fff 0%,#fff 55%,rgba(255,255,255,.4) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -85,6 +94,7 @@ a{color:#ffffff}a:hover{color:#ff6b7d}
 <span class="sa-man" style="font-size: 18px; font-weight: 700; letter-spacing: -0.3px">Statement Analyzer</span>
 </a>
 <div class="sa-links" style="display: flex; align-items: center; gap: 30px">
+<a class="sa-l" href="#demo">Demo</a>
 <a class="sa-l" href="#features">Features</a>
 <a class="sa-l" href="#privacy">Privacy</a>
 <a class="sa-l" href="#start">How to start</a>
@@ -117,6 +127,7 @@ Install on iPhone</a>
 Windows / Mac</a>
 </div>
 <p style="margin: 18px 0 0; font-size: 14px; color: #a1a1aa">iPhone: open in Safari → Share → Add to Home Screen</p>
+<a href="#demo" style="margin-top: 22px; display: inline-flex; align-items: center; gap: 10px; color: #fecaca; text-decoration: none; font-size: 15px; font-weight: 600"><span aria-hidden="true" style="width: 32px; height: 32px; border-radius: 999px; background: #ef233c; display: inline-flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M7 4v16l13-8z"></path></svg></span>Watch the demo (with sound)</a>
 
 <div style="width: 100%; max-width: 1180px; margin-top: 110px; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); padding: 32px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 18px 44px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #a1a1aa">Reads</span>
@@ -125,6 +136,29 @@ Windows / Mac</a>
 <span class="sa-man" style="font-weight: 600; color: #e4e4e7">PDF statements</span>
 <span class="sa-man" style="font-weight: 600; color: #e4e4e7">Password-protected PDF</span>
 <span class="sa-man" style="font-weight: 600; color: #e4e4e7">Bank &amp; credit card</span>
+</div>
+</section>
+
+<section id="demo" style="padding: 100px 24px 40px; scroll-margin-top: 80px">
+<div style="max-width: 1180px; margin: 0 auto">
+<div style="text-align: center; max-width: 760px; margin: 0 auto 48px">
+<h2 class="sa-h2">See it <span style="color: #ef233c">in action</span></h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #a1a1aa">Tap play – both videos have voice-over, so turn your sound on.</p>
+</div>
+<div class="sa-vgrid">
+<div class="sa-vcard">
+<video controls playsinline preload="metadata" poster="videos/full-demo-poster.jpg" aria-label="Statement Analyzer – Full Demo video">
+<source src="videos/statement-analyzer-full-demo.mp4" type="video/mp4">
+</video>
+<div class="sa-vmeta"><span class="sa-vtag">Full demo · 1:49</span><p class="sa-vt">Statement Analyzer – Full Demo</p><p class="sa-vd">The complete walkthrough: drop in a statement, check the balance, auto-categories, budget vs actual and the 10 key insights.</p></div>
+</div>
+<div class="sa-vcard sa-vq">
+<video controls playsinline preload="metadata" poster="videos/quick-look-poster.jpg" aria-label="Statement Analyzer – Quick Look video">
+<source src="videos/statement-analyzer-quick-look.mp4" type="video/mp4">
+</video>
+<div class="sa-vmeta"><span class="sa-vtag">Quick look · 0:41</span><p class="sa-vt">Statement Analyzer – Quick Look</p><p class="sa-vd">A 40-second glimpse, made for phones.</p></div>
+</div>
+</div>
 </div>
 </section>
 
@@ -264,5 +298,6 @@ Windows / Mac</a>
 </footer>
 </div>
 
+<script>document.addEventListener("play",function(e){document.querySelectorAll("#demo video").forEach(function(v){if(v!==e.target)v.pause()})},true);</script>
 </body>
 </html>
